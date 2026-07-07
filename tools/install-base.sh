@@ -63,7 +63,7 @@ tlmgr conf texmf max_print_line 10000
 if [ "$3" != '' ]; then
   tlmgr option repository "$3"
   if [ "$4" != '' ]; then
-    tlmgr --repository https://www.preining.info/tlgpg/ install tlgpg
+    tlmgr --repository https://texlive.info/tlgpg/ install tlgpg
   fi
   # test if the repository is accessible; if not, set the default CTAN repo
   tlmgr update --list || ./tlmgr option repository ctan
